@@ -1,0 +1,216 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \usepackage[brazilian]{babel}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Glaymar Albuquerque de França}}\\
+    \vspace*{2pt}
+    \ {Desenvolvedor}\\
+    \vspace*{2pt}
+    \href{mailto:glaymar2010@gmail.com}{glaymar2010@gmail.com} | \href{tel:+5583993322427}{+5583993322427} | Campinas-SP\\
+    \vspace*{2pt}
+    \textbf{\href{https://github.com/bodescorp}{GitHub | }}\textbf{\href{https://www.linkedin.com/in/glaymar-albuquerque-de-fran\%C3\%A7a/}{Linkedin | }}\textbf{\href{https://www.hackerrank.com/profile/Glaymar}{HackerRank}}\\
+  \end{center}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Resume
+    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \header{Resume}
+    \vspace{2mm}
+           Graduado em Análise e Desenvolvimento de Sistemas pelo IFPB, Campus Cajazeiras, com experiência na área de desenvolvimento desde 2014 e atuação profissional desde 2021. Especializado em desenvolvimento de aplicações web utilizando NodeJS e React, além de atuar em suporte e manutenção em informática desde 2018. Possuo habilidades sólidas em relacionamento interpessoal, trabalho em equipe, organização e uma forte disposição para aprender e me adaptar a novas tecnologias.
+    \vspace{2mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Instituto Federal de Educação, Ciência e Tecnologia da Paraíba}\hfill Cajazeiras-PB, Brasil\\
+Curso Técnico em Informática Integrado Ensino Médio \hfill Jan, 2014 - Jan, 2018\\
+{\sl GPA: 75,82}\\
+\vspace{2mm}
+      \textbf{Instituto Federal de Educação, Ciência e Tecnologia da Paraba}\hfill Cajazeiras-PB, Brasil,\\
+Ensino superior em Análise e desenvolvimento de sistemas Graduação \hfill Jan, 2018 - Mar, 2023\\
+{\sl GPA: 74,43}\\
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Experience
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Experience}
+      \vspace{2mm}
+
+      \textbf{Faculdade Santa Maria}\textbf{ | Técnico em Informática} \hfill Cajazeiras-PB, Brasil | Set, 2021 - Fev, 2023\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Planejar, desenvolver e manter \textbf{Sistemas Web}
+\item  Gerar relatórios através de consultas \textbf{SQL}
+\item  Manutenção de rede
+\item  Suporte N1, N2
+\end{itemize}
+      \textbf{Loop3}\textbf{ | Desenvolvedor Full-stack web} \hfill Remoto | Fev,2022 - Set,2022\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Desenvolvimento e manutenção de sistemas web
+\item  Integração com sistema de pagamentos
+\end{itemize}
+      \textbf{Dical Fiat}\textbf{ | Técnico de Tecnologia da Informação} \hfill Cajazeiras-PB, Brasil | Fev, 2018 - Dez, 2021\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Manutenção de computadores
+\item  Instalação de softwares
+\item  Manutenção de rede
+\end{itemize}
+      \textbf{Loopis Jr (Empresa Júnior)}\textbf{ | Consultor e RH} \hfill Cajazeiras-PB, Brasil | Jan, 2019 - Dez, 2021\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Gerenciamento de recursos humanos
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Programming Languages: & JavaScript, Python \\
+  Libraries/Frameworks: & React, Django, nests, NestJs \\
+  Tools / Platforms: & Docker, Visual Studio Code, Godot, Insominia \\
+  Databases: & MongoDB, Postgresql, Neo4J \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{API-bibliteca-ciec}}\textbf{ | \href{https://github.com/Alttabcorp/API-bibliteca_siec}{Link}}\hfill{\sl nestjs,swagger,docker,typescript}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] Sistema de gerenciamento de livros.
+\end{itemize}
+          \vspace*{3mm}
+%       {\textbf{a}}\textbf{ | \href{http://a}{Link}}\hfill{\sl a}\\
+%           \vspace{-3mm}
+% \begin{itemize} \itemsep -3pt
+% \item[] a
+% \end{itemize}
+%           \vspace*{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Certifications}
+      \vspace{2mm}
+      • Neo4j Fundamentals - \textbf{\href{https://graphacademy.neo4j.com/c/9d25b359-5995-4053-8475-7b2bf61f163e/}{Neo4j}}\\
+      \begin{itemize} \itemsep -3pt
+        \item[] Sistema de gerenciamento de livros.
+        \end{itemize} 
+\vspace*{1mm}
+      • NLW Unite - Nodejs - \textbf{\href{https://app.rocketseat.com.br/certificates/a53012ec-27a9-419e-9a8c-86f28508a406}{Rocketseat}}\\
+\vspace*{1mm}
+      • NLW Unite - Python - \textbf{\href{https://app.rocketseat.com.br/certificates/c5f21b9b-53c5-4ed7-bc45-430d87cccf77}{Rocketseat}}\\
+\vspace*{1mm}
+      • NLW Unite - Fullstack - \textbf{\href{https://app.rocketseat.com.br/certificates/d3577eb6-c50f-42f3-b595-b96297ef0e05}{Rocketseat}}\\
+\vspace*{1mm}
+     • Git e GitHub do básico ao avançado (c/ gist e GitHub Pages) \textbf{\href{https://www.udemy.com/certificate/UC-db57cce7-1471-47ff-9828-0e3a4d7da628/}{Udemy}}\\
+\vspace*{1mm}
+     • Fundamentos de Gestão de Projetos
+     \textbf{\href{https://www.linkedin.com/learning/certificates/0fc1a744c87dc72f53e8c694fd58809808a183327167377cb224c1ac43e732b6}{linkedin}}\\
+
+\vspace{2mm}
+
+    \ 
+    \end{document}
