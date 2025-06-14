@@ -4,3 +4,5 @@ Curriculo.fls
 Curriculo.log
 Curriculo.out
 Curriculo.synctex.gz
+/.devcontainer
+/DockerFile
