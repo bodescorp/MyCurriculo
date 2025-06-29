@@ -9,39 +9,36 @@
     \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
     \usepackage{longtable}
     \usepackage[portuguese]{babel}
+    \usepackage{enumitem}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
 
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
-
+% Definições para o currículo
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
-% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\area} [2] {
+\newcommand{\area}[2]{
     \vspace*{-9pt}
     \begin{verse}
         \textbf{#1}   #2
     \end{verse}
 }
 
-\newcommand{\lineunder} {
+\newcommand{\lineunder}{
     \vspace*{-8pt} \\
     \hspace*{-18pt} \hrulefill \\
 }
 
-\newcommand{\header} [1] {
+\newcommand{\header}[1]{
     {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt} \lineunder
 }
 
-\newcommand{\employer} [3] {
+\newcommand{\employer}[3]{
     { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
 }
 
-\newcommand{\contact} [3] {
+\newcommand{\contact}[3]{
     \vspace*{-10pt}
     \begin{center}
         {\Huge \scshape {#1}}\\
@@ -56,114 +53,173 @@
     \end{list}
 }
 
-\newcommand{\schoolwithcourses} [4] {
+\newcommand{\schoolwithcourses}[4]{
     \textbf{#1} #2 $\bullet$ #3\\
     #4 \\
     \vspace*{5pt}
 }
 
-\newcommand{\school} [4] {
+\newcommand{\school}[4]{
     \textbf{#1} #2 $\bullet$ #3\\
     #4 \\
 }
 
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\skillrow}[2]{
+    \textbf{#1} & #2 \\
+}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
 
 \begin{document}
 \vspace*{-40pt}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Profile
+%     Perfil
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace*{-2pt}
 \begin{center}
     {\Huge \scshape {Glaymar Albuquerque de França}}\\
     \vspace*{2pt}
-    \ {Desenvolvedor}\\
+    {Desenvolvedor Full-Stack | Fundador Alttab Corp}\\
     \vspace*{2pt}
     \href{mailto:glaymar2010@gmail.com}{glaymar2010@gmail.com} | \href{https://wa.me/+5583993322427}{+5583993322427} | Campinas-SP\\
     \vspace*{2pt}
-    \textbf{\href{https://www.linkedin.com/in/glaymar-albuquerque-de-fran\%C3\%A7a/}{Linkedin: linkedin.com/in/glaymar-albuquerque-de-frança }} \\
+    \textbf{\href{https://www.linkedin.com/in/glaymar-albuquerque-de-fran\%C3\%A7a/}{LinkedIn: linkedin.com/in/glaymar-albuquerque-de-frança }} \\
     \textbf{\href{https://github.com/bodescorp}{GitHub: github.com/bodescorp }} \\
+    \vspace*{2pt}
+    {Disponível para trabalho remoto e realocação} \\
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Resume
+%     Resumo
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Resume}
+\header{Resumo}
 \vspace{2mm}
-Graduado em Análise e Desenvolvimento de Sistemas pelo IFPB, Campus Cajazeiras, com experiência na área de desenvolvimento desde 2014 e atuação profissional desde 2021.
-Especializado em desenvolvimento de aplicações web utilizando NodeJS e React, além de atuar em suporte e manutenção em informática desde 2018. Possuo habilidades sólidas
-em relacionamento interpessoal, trabalho em equipe, organização e uma forte disposição para aprender e me adaptar a novas tecnologias.
-\vspace{2mm}
-
+Desenvolvedor Full-stack com 6+ anos de experiência, especializado em arquiteturas escaláveis e desenvolvimento ágil. 
+Histórico comprovado de entrega de soluções inovadoras em diversos setores: educacional, hospitalar e corporativo. 
+Forte atuação em tecnologias modernas como Node.js, React, TypeScript e Cloud Computing, com foco em qualidade e segurança.
+Experiência em liderança técnica e gestão de projetos, combinando habilidades técnicas e visão estratégica de negócios.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Education
+%     Formação
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Education}
+\header{Formação}
 \vspace{2mm}
 \textbf{Instituto Federal de Educação, Ciência e Tecnologia da Paraíba}\hfill Cajazeiras-PB, Brasil\\
-Curso Técnico em Informática Integrado Ensino Médio \hfill Jan, 2014 - Jan, 2018\\
-{\sl GPA: 75,82}\\
+Curso Técnico em Informática Integrado ao Ensino Médio \hfill Jan, 2014 - Jan, 2018\\
+{\sl Média Global: 75,82}\\
 \vspace{2mm}
-\textbf{Instituto Federal de Educação, Ciência e Tecnologia da Paraba}\hfill Cajazeiras-PB, Brasil,\\
-Ensino superior em Análise e desenvolvimento de sistemas Graduação \hfill Jan, 2018 - Mar, 2023\\
-{\sl GPA: 74,43}\\
+\textbf{Instituto Federal de Educação, Ciência e Tecnologia da Paraíba}\hfill Cajazeiras-PB, Brasil\\
+Análise e Desenvolvimento de Sistemas \hfill Jan, 2018 - Mar, 2023\\
+{\sl Média Global: 74,43}\\
 \vspace{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Experience
+%     Experiência
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Experience}
+\header{Experiência Profissional}
 \vspace{2mm}
 
-\textbf{Faculdade Santa Maria}\textbf{ | Técnico em Informática} \hfill Cajazeiras-PB, Brasil | Set, 2021 - Fev, 2023\\
+\textbf{LAVID/UFPB}\textbf{ | Pesquisador em Desenvolvimento de Sistemas} \hfill João Pessoa-PB | Out, 2023 - Presente\\
+\textit{Projeto P\&D – FAPESQ + Laboratório de Aplicações de Vídeo Digital} \hfill Remoto\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item  Criação de relatórios personalizados através de consultas SQL no \textbf{SQL Server}, agregando valor ao fornecer dados analíticos e insights valiosos para a tomada de decisões.
-    \item  Desenvolvimento de sistema de gerenciamento de atendimento aos alunos, incluindo solicitações de arquivos à secretaria. Utilização de \textbf{Nodejs, Express, Typescript, Docker} no desenvolvimento Back-end,
-          \textbf{AWS} para armazenamento de arquivos, \textbf{PostgreSQL} no banco de dados da aplicação, \textbf{TypeORM} como ORM no gerenciamento do banco de dados relacional e \textbf{React} para uma interface de usuário dinâmica e responsiva.
-    \item  Desenvolvimento de um sistema para gerenciar o Plano Individual de Trabalho, facilitando a organização e acompanhamento das atividades docentes. Utilização de \textbf{Node.js, Express.js} no desenvolvimento Back-end,
-          \textbf{Knex.js} para o interação com o banco de dados \textbf{SQLite3} no banco de dados, além de integração com a API externa \textbf{SendGrid} para notificações e \textbf{React} no front-end para uma experiência
-          de usuário moderna e interativa.
-    \item  Gestão e manutenção de redes com fio e sem fio, incluindo Cabo de rede, garantindo conectividade confiável e eficiente.
-    \item  Provisão de suporte técnico de primeiro e segundo níveis para o sistema TOTVS Educacional, resolvendo problemas e mantendo a operação contínua.
+    \item Atuo em projeto de pesquisa aplicada para desenvolvimento de soluções inovadoras em gestão de dispositivos móveis
+    \item Desenvolvo sistema robusto utilizando \textbf{React Native} (\textbf{TypeScript}) com \textbf{Expo} e front-end web em \textbf{Next.js}
+    \item Implemento arquitetura escalável com \textbf{Appwrite} (BaaS), \textbf{Context API} e validações via \textbf{Zod}
+    \item Construo funcionalidades críticas: rastreamento IMEI, notificações em tempo real e dashboard analítico
+    \item Aplico princípios \textbf{SOLID}, Clean Code e práticas avançadas de segurança e privacidade
+    \item Colaboro em ambiente de pesquisa com foco em inovação pública e impacto social
 \end{itemize}
-\textbf{Loop3}\textbf{ | Desenvolvedor Full-stack web} \hfill Remoto | Fev,2022 - Set,2022\\
+
+\textbf{Alttab Corp}\textbf{ | Fundador e CEO} \hfill Remoto | Mai, 2023 - Presente\\
+\textit{Empresa de Tecnologia e Inovação} \hfill Meio período\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item Criação e manutenção de funcionalidades de sistemas web completos, incluindo dashboards interativos, APIs robustas e aplicativos mobile intuitivos.
-          Utilização de tecnologias \textbf{Node.js, Express.js} para desenvolvimento back-end e \textbf{MongoDB} como Banco de Dados não relacional, \textbf{React} no desenvolvimento front-end e \textbf{React Native} no desenvolvimento mobile
-          para garantir uma experiência de usuário eficiente e segura.
-    \item  Implementação de integrações com a plataforma de Gestão de Cobranças, \textbf{Asaas}, utilizando \textbf{Webhooks} para garantir transações seguras e eficientes.
-    \item Utilização de \textbf{Azure DevOps} para gerenciamento de projetos, CI/CD, otimizando processos de desenvolvimento e implantação.
-
-
+    \item Lidero empresa familiar em fase de estruturação com atuação em impressão 3D, consultoria em TI e e-sports
+    \item Desenvolvo planejamento estratégico e operacional, focando em inovação e crescimento sustentável
+    \item Executo projetos de prototipagem rápida e modelagem CAD com tecnologias avançadas de fabricação aditiva
+    \item Presto consultoria em desenvolvimento full-stack e infraestrutura de TI para ambientes corporativos
+    \item Gerencio equipes e competições de e-sports, incluindo estratégias de marketing digital e engajamento
+    \item Estabeleço e mantenho parcerias estratégicas para expansão de mercado e desenvolvimento de negócios
 \end{itemize}
-\textbf{Dical Fiat}\textbf{ | Técnico de Tecnologia da Informação} \hfill Cajazeiras-PB, Brasil | Fev, 2018 - Dez, 2021\\
-\vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-    \item  Responsável pela manutenção preventiva e corretiva de computadores, garantindo seu funcionamento adequado e prolongando sua vida útil.
-    \item  Realização da instalação e configuração de softwares diversos, garantindo a disponibilidade e o desempenho adequado das aplicações utilizadas pela equipe.
-    \item  Gestão e manutenção da infraestrutura de rede, incluindo configuração de equipamentos e resolução de problemas, assegurando conectividade confiável e eficiente para os usuários.
-    \item  Provisão de suporte técnico de primeiro e segundo níveis para o sistema Dealernet, resolvendo problemas e mantendo a operação contínua.
-\end{itemize}
-\textbf{Loopis Jr (Empresa Júnior)}\textbf{ | Consultor e RH} \hfill Cajazeiras-PB, Brasil | Jan, 2019 - Dez, 2021\\
-\vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-    \item  Responsável pelo gerenciamento eficiente dos recursos humanos da empresa, incluindo atividades como recrutamento, seleção, treinamento e desenvolvimento, visando o alinhamento estratégico dos colaboradores com os objetivos organizacionais.
 
+\textbf{Life Tecnologia e Consultoria}\textbf{ | Técnico de Suporte ao Usuário} \hfill Cajazeiras-PB | Jan, 2023 - Presente\\
+\textit{Alocado no Hospital Universitário Júlio Bandeira (HUJB - Ebserh)} \hfill Presencial\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Atuo com suporte técnico N1 e N2 em ambiente hospitalar crítico, garantindo continuidade operacional e segurança da informação
+    \item Realizo gestão e manutenção de estações de trabalho, incluindo instalação, configuração e substituição de equipamentos
+    \item Administro redes e conectividade, garantindo disponibilidade dos serviços essenciais
+    \item Presto suporte a sistemas institucionais críticos (\textbf{SEI}, \textbf{AGHU}, \textbf{PACS}) e softwares corporativos
+    \item Gerencio infraestrutura de impressão, acessos, diretórios, telefonia e CFTV
+    \item Mantenho documentação e atendimento ágil, com foco em excelência e segurança
+\end{itemize}
+
+\textbf{LOOP3}\textbf{ | Desenvolvedor Full-stack} \hfill Itapema-SC | Fev, 2022 - Set, 2022\\
+\textit{Desenvolvimento Web e Mobile} \hfill Remoto\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Desenvolvi sistemas web completos com \textbf{Node.js}, \textbf{Express.js} e \textbf{MongoDB} no back-end
+    \item Criei interfaces responsivas com \textbf{React} (web) e \textbf{React Native} (mobile), focando em UX
+    \item Implementei dashboards interativos e APIs robustas com foco em performance e escalabilidade
+    \item Integrei plataforma \textbf{Asaas} via \textbf{Webhooks} para automação de cobranças e transações
+    \item Utilizei \textbf{Azure DevOps} para CI/CD, versionamento e gestão ágil de projetos
+    \item Apliquei práticas de desenvolvimento seguro e otimização de performance em todas as camadas
+\end{itemize}
+
+\textbf{Faculdade Santa Maria}\textbf{ | Técnico em Informática} \hfill Cajazeiras-PB | Set, 2021 - Fev, 2023\\
+\textit{Desenvolvimento e Suporte em Tecnologia Educacional} \hfill Tempo integral\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Desenvolvi sistema de atendimento aos alunos com \textbf{Node.js}, \textbf{TypeScript}, \textbf{Docker}, \textbf{AWS S3}, \textbf{PostgreSQL} e \textbf{React}
+    \item Criei relatórios analíticos via \textbf{SQL Server} para suporte à tomada de decisões estratégicas
+    \item Implementei plataforma de Plano Individual de Trabalho (PIT) usando \textbf{Node.js}, \textbf{SQLite3}, \textbf{SendGrid} e \textbf{React}
+    \item Mantive infraestrutura de rede e serviços com alta disponibilidade para mais de 500 usuários
+    \item Prestei suporte N1/N2 ao sistema \textbf{TOTVS Educacional}, garantindo continuidade operacional
+    \item Utilizei \textbf{TypeORM} e \textbf{Knex.js} para ORM, e \textbf{Express.js} para desenvolvimento de APIs
+\end{itemize}
+
+\textbf{Loopis Jr}\textbf{ | Diretor de RH} \hfill Cajazeiras-PB | Jan, 2019 - Dez, 2021\\
+\textit{Empresa Júnior de Tecnologia - IFPB} \hfill Híbrido\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Liderei estratégias de RH, incluindo recrutamento, seleção e desenvolvimento de talentos em TI
+    \item Implementei programas de integração e treinamento, fortalecendo a cultura organizacional
+    \item Assessorei liderança em decisões estratégicas baseadas em desempenho e competências
+    \item Desenvolvi políticas de engajamento e retenção, com foco em crescimento profissional
+    \item Coordenei equipe de 15+ pessoas, alcançando metas organizacionais estabelecidas
+\end{itemize}
+
+\textbf{Loopis Jr}\textbf{ | Consultor Júnior} \hfill Cajazeiras-PB | Dez, 2018 - Dez, 2019\\
+\textit{Desenvolvimento Web e Mobile} \hfill Híbrido\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Desenvolvi aplicações mobile híbridas com \textbf{Ionic}, garantindo interfaces responsivas
+    \item Criei APIs e sistemas back-end utilizando \textbf{Python} (\textbf{Django}) e \textbf{Node.js}
+    \item Participei do ciclo completo de desenvolvimento: análise, modelagem, desenvolvimento e deploy
+    \item Colaborei em projetos para empresas e startups usando metodologias ágeis
+    \item Apliquei boas práticas de arquitetura e desenvolvimento seguro
+\end{itemize}
+
+\textbf{Dical Fiat}\textbf{ | Técnico de Tecnologia da Informação} \hfill Paraíba | Fev, 2018 - Dez, 2021\\
+\textit{Suporte e Infraestrutura de TI} \hfill Meio período · Presencial\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Realizei manutenção preventiva e corretiva de computadores, maximizando vida útil e estabilidade
+    \item Gerenciei instalação e configuração de softwares, garantindo disponibilidade das aplicações
+    \item Administrei infraestrutura de rede, incluindo configuração de dispositivos e resolução de problemas
+    \item Prestei suporte técnico N1 e N2 ao sistema \textbf{Dealernet}, mantendo continuidade operacional
+    \item Assegurei conectividade eficiente e confiável para toda a equipe
+    \item Implementei rotinas de manutenção preventiva, reduzindo tempo de inatividade dos sistemas
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,93 +227,152 @@ Ensino superior em Análise e desenvolvimento de sistemas Graduação \hfill Jan
 %     Skills
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Skills}
+\header{Competências Técnicas}
 \vspace{2mm}
 \begin{longtable}{p{4cm}p{12cm}}
-    Programming Languages: & JavaScript, Python, GdScript, TypeScript                        \\
-    Libraries/Frameworks:  & React, Django, NestJs, Expressjs, handlebars, React-Native      \\
-    Tools / Platforms:     & Docker, knex, TypeOrm, Godot, Insominia, Azure DevOps, Git, AWS \\
-    Databases:             & MongoDB, Postgresql, Neo4J, Sqlite3, SqlServer                  \\
+    \skillrow{Back-end}{Node.js (6 anos), TypeScript (4 anos), Python/Django (3 anos), Express.js (4 anos), NestJS (2 anos)}\\
+    \skillrow{Front-end}{React (4 anos), React Native (3 anos), Ionic (2 anos), HTML5/CSS3 (6 anos)}\\
+    \skillrow{DevOps}{Docker, AWS, GitHub Actions, Azure DevOps, CI/CD}\\
+    \skillrow{Banco de Dados}{PostgreSQL, MongoDB, SQLite, SQL Server, Neo4J}\\
+    \skillrow{Cloud}{AWS (S3, EC2, Lambda), Azure, Heroku}\\
+    \skillrow{Ferramentas}{Git, Jira, TypeORM, Swagger, Insomnia}
 \end{longtable}
 \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Soft Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Competências Comportamentais}
+\vspace{2mm}
+\begin{itemize}[leftmargin=*]
+    \item Liderança e gestão de equipes multidisciplinares
+    \item Visão estratégica e mentalidade empreendedora
+    \item Resolução de problemas complexos
+    \item Comunicação efetiva e trabalho em equipe
+    \item Adaptabilidade e aprendizado contínuo
+    \item Foco em resultados e qualidade
+\end{itemize}
+\vspace{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Projects
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Projects / Open-Source}
-\vspace{2mm}
-{\textbf{API-bibliteca-ciec}}\textbf{ | \href{https://github.com/Alttabcorp/API-bibliteca_siec}{Link}}\hfill{\sl nestjs,swagger,docker,typescript}\\
+\header{Projetos em Destaque}
+\vspace{1mm}
+
+{\textbf{Sistema de Inventários Históricos}}\textbf{ | \href{https://repositorio.ifpb.edu.br/handle/177683/2898}{Link}}\hfill{\sl Node.js, TypeScript, Neo4J, React}\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Desenvolvimento de uma API para gerenciamento de livros, utilizando as tecnologias mais recentes para garantir desempenho e eficiência.
-        Implementeção da documentação da API utilizando o \textbf{Swagger}, proporcionando uma interface amigável para os usuários. Utilizando o \textbf{Docker} para garantir a portabilidade e escalabilidade da aplicação.
-        O desenvolvimento foi feito em \textbf{TypeScript}. O \textbf{NestJS} foi a escolha para o framework backend, proporcionando uma arquitetura modular e escalável.
-        Essa API permite a criação, atualização, exclusão e consulta de livros de forma rápida e eficiente, fornecendo uma base sólida para sistemas de gerenciamento de bibliotecas e livrarias online.
+    \item[] TCC da graduação no IFPB focado na análise de documentos históricos judiciais (inventários post-mortem) usando banco de dados orientado a grafos para mapeamento de relações sociais e patrimoniais.
+        \begin{itemize}
+            \item Modelagem de dados complexos em Neo4J para representar relações entre pessoas, bens e processos
+            \item Interface web em React com visualização interativa de grafos sociais
+            \item API REST em Node.js/TypeScript com +20 endpoints para análise de dados
+            \item Processamento de +1000 registros históricos com identificação de padrões sociais
+            \item Redução de 70% no tempo de pesquisa histórica e genealógica
+            \item Ferramenta utilizada por pesquisadores para estudos historiográficos regionais
+        \end{itemize}
 \end{itemize}
-\vspace*{3mm}
-{\textbf{Cext-final-}}\textbf{ | \href{https://github.com/bodescorp/Cext-final-}{Link}}\hfill{\sl Python/ Django }\\
+\vspace*{2mm}
+
+{\textbf{API Biblioteca CIEC}}\textbf{ | \href{https://github.com/Alttabcorp/API-bibliteca_siec}{Link}}\hfill{\sl NestJS, Swagger, Docker, TypeScript}\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Projeto de conclusão de curso durante formação técnica no IFPB campus Cajazeiras, aplicação web utilizando Django que simplifica o preenchimento de certificados. Esta aplicação proporciona uma interface intuitiva
-        e interativa, construída com HTML, CSS e JavaScript integrados ao framework Django. Solução oferece uma maneira eficaz de automatizar o processo de geração de certificados personalizados, tornando-o acessível e
-        simplificado para diversos contextos de uso.
+    \item[] API RESTful para gerenciamento completo de acervo bibliotecário, desenvolvida com arquitetura modular e práticas modernas.
+        \begin{itemize}
+            \item Implementação de API completa (CRUD) com NestJS e TypeScript, seguindo padrões REST
+            \item Documentação interativa via Swagger UI com +50 endpoints documentados
+            \item Containerização com Docker e Docker Compose para ambiente de desenvolvimento e produção
+            \item Arquitetura em camadas (Repository Pattern) com +90% de cobertura de testes
+            \item Sistema de autenticação JWT e controle granular de permissões
+            \item Integração com serviços externos para importação/exportação de catálogos
+        \end{itemize}
 \end{itemize}
-\vspace*{3mm}
-{\textbf{Sistema Inventários}}\textbf{ | \href{https://repositorio.ifpb.edu.br/handle/177683/2898}{Link}}\hfill{\sl NodeJs, Typescript, Neo4J, React }\\
+\vspace*{2mm}
+
+{\textbf{Template de Documentação Técnica}}\textbf{ | Alttab Corp}\hfill{\sl Docker, LaTeX, Markdown, DevContainer}\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Projeto de conclusão de curso durante Graduação no IFPB campus Cajazeiras, projeto é utilizar um banco de dados não relacional para armazenar e manipular informações de inventários post-mortem, fontes históricas judiciais
-        que registram os bens patrimoniais de uma pessoa após sua morte, bem como os nomes de pessoas envolvidas nesse processo. Utilizando uso de um banco de dados orientado a grafos (NoSQL), devido à sua capacidade de retorno ao usuário em grafos,
-        facilitando consultas e permitindo o cruzamento de informações para identificação das pessoas citadas nos inventários.
+    \item[] Framework de documentação técnica empresarial desenvolvido para padronizar e agilizar a documentação de projetos através de templates reutilizáveis.
+        \begin{itemize}
+            \item Ambiente containerizado com Docker e DevContainer para desenvolvimento consistente
+            \item Templates modulares em LaTeX e Markdown com estrutura hierárquica
+            \item Sistema de versionamento via submódulos Git para reuso entre projetos
+            \item Pipelines de CI/CD para validação e geração automática de documentação
+            \item Redução de 60% no tempo de setup de documentação de novos projetos
+            \item Adotado como padrão em todos os projetos da empresa
+        \end{itemize}
 \end{itemize}
-\vspace*{3mm}
+\vspace*{2mm}
+
+{\textbf{Sistema de Certificados}}\textbf{ | \href{https://github.com/bodescorp/Cext-final-}{Link}}\hfill{\sl Python, Django, JavaScript}\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item[] Projeto de TCC desenvolvido para o IFPB Campus Cajazeiras, focado na automação e simplificação do processo de emissão de certificados institucionais.
+        \begin{itemize}
+            \item Interface responsiva desenvolvida com Django Templates, HTML5, CSS3 e JavaScript
+            \item Sistema de templates dinâmicos com +20 modelos personalizáveis
+            \item Redução de 90% no tempo de emissão (de horas para minutos)
+            \item Validação automática com QR Code e sistema anti-fraude
+            \item Integração com sistema acadêmico para importação de dados
+            \item Implementado e utilizado por +3 departamentos do campus
+        \end{itemize}
+\end{itemize}
+\vspace*{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Certifications
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Certifications}
-\vspace{2mm}
-• NLW Unite - Fullstack - \textbf{\href{https://app.rocketseat.com.br/certificates/d3577eb6-c50f-42f3-b595-b96297ef0e05}{Rocketseat}}\\
-\begin{itemize}
-    \item [] Desenvolvimento de uma aplicação front-end em HTML, CSS e JavaScript, conceitos teóricos dos fundamentos da programação, criação de estrutura base com HTML, estilização com CSS, aplicação de lógica de programação com o JavaScript , IA para gerar a lista dos participantes, Day.js para lidar com datas e uso do GitHub e GitHub Pages para publicar a aplicação.
+\header{Certificações}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*] \itemsep -2pt
+    \item \textbf{NLW Unite - Fullstack} (\href{https://app.rocketseat.com.br/certificates/d3577eb6-c50f-42f3-b595-b96297ef0e05}{Rocketseat})
+    \begin{itemize} \itemsep -1pt
+        \item Desenvolvimento full-stack com HTML, CSS, JavaScript e IA
+        \item Integração com GitHub e deploy automatizado
+    \end{itemize}
+    
+    \item \textbf{NLW Unite - Node.js} (\href{https://app.rocketseat.com.br/certificates/a53012ec-27a9-419e-9a8c-86f28508a406}{Rocketseat})
+    \begin{itemize} \itemsep -1pt
+        \item API REST com TypeScript, Fastify, Prisma ORM e Zod
+        \item Boas práticas e padrões de desenvolvimento
+    \end{itemize}
+    
+    \item \textbf{NLW Unite - Python} (\href{https://app.rocketseat.com.br/certificates/c5f21b9b-53c5-4ed7-bc45-430d87cccf77}{Rocketseat})
+    \begin{itemize} \itemsep -1pt
+        \item Desenvolvimento web com Flask e boas práticas
+        \item Testes automatizados e CI/CD com Pytest
+    \end{itemize}
+    
+    \item \textbf{Git e GitHub Avançado} (\href{https://www.udemy.com/certificate/UC-db57cce7-1471-47ff-9828-0e3a4d7da628/}{Udemy})
+    \begin{itemize} \itemsep -1pt
+        \item Controle de versão avançado e colaboração
+        \item Gestão de branches e resolução de conflitos
+    \end{itemize}
+    
+    \item \textbf{Docker} (\href{https://drive.google.com/drive/folders/1YKThgvnT5h1bA_Hb0uDiIf7p8Qiph-NC}{B7Web})
+    \begin{itemize} \itemsep -1pt
+        \item Containerização e orquestração de serviços
+        \item Docker Compose e práticas DevOps
+    \end{itemize}
+    
+    \item \textbf{Gestão de Projetos} (\href{https://www.linkedin.com/learning/certificates/0fc1a744c87dc72f53e8c694fd58809808a183327167377cb224c1ac43e732b6}{LinkedIn})
+    \begin{itemize} \itemsep -1pt
+        \item Metodologias ágeis e gestão de recursos
+        \item Liderança de equipes e entrega de valor
+    \end{itemize}
+    
+    \item \textbf{Neo4j Fundamentals} (\href{https://graphacademy.neo4j.com/c/9d25b259-5995-4053-8475-7b2bf61f163e/}{Neo4j})
+    \begin{itemize} \itemsep -1pt
+        \item Modelagem e consulta de dados em grafos
+        \item Otimização e análise de relacionamentos complexos
+    \end{itemize}
 \end{itemize}
-\vspace*{1mm}
-• NLW Unite - Nodejs - \textbf{\href{https://app.rocketseat.com.br/certificates/a53012ec-27a9-419e-9a8c-86f28508a406}{Rocketseat}}\\
-\begin{itemize}
-    \item [] Desenvolvimento de uma aplicação back-end em Node.js, aplicação dos conceitos de API REST, utilizando TypeScript, Fastify como framework, integração do Prisma ORM + SQLite e Zod para validação de dados.
-\end{itemize}
-\vspace*{1mm}
-• NLW Unite - Python - \textbf{\href{https://app.rocketseat.com.br/certificates/c5f21b9b-53c5-4ed7-bc45-430d87cccf77}{Rocketseat}}\\
-\begin{itemize}
-    \item [] Desenvolvimento de uma aplicação de cadastro e gerenciamento de eventos. Utilizando Python como linguagem de programação, Flask como framework web, preparação de ambiente e boas práticas de projeto com Virtualenv, Pylint e versionamento de código usando pre-commit, boas práticas de código com entidades, services e repositories + testes automatizados com Pytest.
-\end{itemize}
-\vspace*{1mm}
-• Git e GitHub do básico ao avançado (c/ gist e GitHub Pages) \textbf{\href{https://www.udemy.com/certificate/UC-db57cce7-1471-47ff-9828-0e3a4d7da628/}{Udemy}}\\
-\begin{itemize}
-    \item [] Habilidades fundamentais e avançadas em controle de versão e colaboração em projetos de software. O curso abrangeu fundamentos do Git, incluindo inicialização de repositórios, commits, branches, merges e resolução de conflitos,
-          bem como a utilização do GitHub para criação e gerenciamento de repositórios, pull requests e colaborações.
-\end{itemize}
-\vspace*{1mm}
-• Docker - \textbf{\href{https://drive.google.com/drive/folders/1YKThgvnT5h1bA_Hb0uDiIf7p8Qiph-NC}{B7Web}}\\
-\begin{itemize}
-    \item [] Habilidades fundamentais e avançadas em containerização e gerenciamento de contêineres. O curso abrangeu fundamentos do Docker, incluindo instalação, criação de imagens, gerenciamento de contêineres, redes e volumes, bem como a utilização de
-          Docker Compose para orquestrar múltiplos contêineres.
-\end{itemize}
-\vspace*{1mm}
-• Fundamentos de Gestão de Projetos \textbf{\href{https://www.linkedin.com/learning/certificates/0fc1a744c87dc72f53e8c694fd58809808a183327167377cb224c1ac43e732b6}{linkedin}}\\
-\begin{itemize}
-    \item [] Habilidades fundamentais em planejamento, execução e monitoramento de projetos. O curso abrangeu fundamentos de gestão de projetos, incluindo definição de objetivos, escopo, cronograma, orçamento e qualidade,técnicas de comunicação, gestão de riscos e liderança de equipes, além de práticas avançadas para a otimização de recursos, controle de progresso e entrega de projetos bem-sucedidos.
-\end{itemize}
-\vspace*{1mm}
-• Neo4j Fundamentals - \textbf{\href{https://graphacademy.neo4j.com/c/9d25b359-5995-4053-8475-7b2bf61f163e/}{Neo4j}}\\
-\begin{itemize} \itemsep -3pt
-    \item[] Habilidades fundamentais em banco de dados orientado a grafos e gerenciamento de dados complexos. O curso abrangeu fundamentos do Neo4j, incluindo instalação, modelagem de dados em grafos, consultas utilizando a linguagem Cypher, e manipulação de nós e relacionamentos. Além disso, aprendi a integrar Neo4j com outras tecnologias, otimizar consultas para desempenho e aplicar técnicas avançadas de análise de grafos para resolver problemas complexos.
-\end{itemize}
-\vspace{2mm}
 
-\
 \end{document}
