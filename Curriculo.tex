@@ -8,40 +8,37 @@
     \usepackage[hidelinks]{hyperref}
     \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
     \usepackage{longtable}
-    \usepackage[portuguese]{babel}
+    \usepackage[english]{babel}
+    \usepackage{enumitem}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
 
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
-
+% Resume definitions
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
-% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand{\area} [2] {
+\newcommand{\area}[2]{
     \vspace*{-9pt}
     \begin{verse}
         \textbf{#1}   #2
     \end{verse}
 }
 
-\newcommand{\lineunder} {
+\newcommand{\lineunder}{
     \vspace*{-8pt} \\
     \hspace*{-18pt} \hrulefill \\
 }
 
-\newcommand{\header} [1] {
+\newcommand{\header}[1]{
     {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt} \lineunder
 }
 
-\newcommand{\employer} [3] {
+\newcommand{\employer}[3]{
     { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
 }
 
-\newcommand{\contact} [3] {
+\newcommand{\contact}[3]{
     \vspace*{-10pt}
     \begin{center}
         {\Huge \scshape {#1}}\\
@@ -56,53 +53,149 @@
     \end{list}
 }
 
-\newcommand{\schoolwithcourses} [4] {
+\newcommand{\schoolwithcourses}[4]{
     \textbf{#1} #2 $\bullet$ #3\\
     #4 \\
     \vspace*{5pt}
 }
 
-\newcommand{\school} [4] {
+\newcommand{\school}[4]{
     \textbf{#1} #2 $\bullet$ #3\\
     #4 \\
 }
 
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\skillrow}[2]{
+    \textbf{#1} & #2 \\
+}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
 
 \begin{document}
 \vspace*{-40pt}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Profile
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace*{-2pt}
 \begin{center}
     {\Huge \scshape {Glaymar Albuquerque de França}}\\
+    \vspace*{3pt}
+    {\large \textbf{Full-Stack Developer | Alttab Corp Founder}}\\
+    \vspace*{3pt}
+    \href{mailto:glaymar2010@gmail.com}{glaymar2010@gmail.com} $\bullet$ \href{https://wa.me/+5583993322427}{+55 83 99332-2427} \\
     \vspace*{2pt}
-    \ {Developer}\\
-    \vspace*{2pt}
-    \href{mailto:glaymar2010@gmail.com}{glaymar2010@gmail.com} | \href{https://wa.me/+5583993322427}{+5583993322427} | Campinas-SP\\
-    \vspace*{2pt}
-    \textbf{\href{https://www.linkedin.com/in/glaymar-albuquerque-de-fran\%C3\%A7a/}{Linkedin: linkedin.com/in/glaymar-albuquerque-de-frança }} \\
-    \textbf{\href{https://github.com/bodescorp}{GitHub: github.com/bodescorp }} \\
+    \href{https://www.linkedin.com/in/glaymar-albuquerque-de-fran\%C3\%A7a/}{LinkedIn: linkedin.com/in/glaymar-albuquerque-de-frança} $\bullet$ \href{https://github.com/bodescorp}{GitHub: github.com/bodescorp}\\
+    \vspace*{3pt}
+    \textit{Available for remote work and relocation} \\
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Resume
+%     Summary
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Resume}
+\header{Summary}
 \vspace{2mm}
-Graduated in Systems Analysis and Development from IFPB, Campus Cajazeiras, with experience in development since 2014 and professional experience since 2021.
-Specialized in web application development using NodeJS and React, as well as working in IT support and maintenance since 2018.
-Solid interpersonal skills, teamwork, organization and a strong willingness to learn and adapt to new technologies.
+Full-stack Developer with \textbf{6+ years of experience} developing innovative solutions for educational, healthcare, and corporate sectors. Specialized in \textbf{Node.js, React, TypeScript} and Cloud Computing. \textbf{Startup founder} focused on technological innovation and social impact.
 \vspace{2mm}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Technical Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Technical Skills}
+\vspace{2mm}
+\begin{longtable}{p{3.5cm}p{12.5cm}}
+    \skillrow{Core Stack}{Node.js (6 years), TypeScript (4 years), React (4 years), React Native (3 years)}
+    \skillrow{Backend}{Python/Django, NestJS, Express.js, RESTful APIs}
+    \skillrow{Cloud \& DevOps}{AWS, Docker, GitHub Actions, Azure DevOps}
+    \skillrow{Databases}{PostgreSQL, MongoDB, Neo4J, Redis}
+\end{longtable}
+\vspace{2mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Professional Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Professional Experience}
+\vspace{2mm}
+
+\textbf{LAVID/UFPB}\textbf{ | Systems Development Researcher} \hfill João Pessoa-PB | Oct, 2023 - Present\\
+\textit{R\&D Project – FAPESQ + Digital Video Applications Laboratory} \hfill Remote\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Develop robust mobile device management system using \textbf{React Native}, \textbf{TypeScript}, \textbf{Next.js} and \textbf{Appwrite}
+    \item Implement critical features such as IMEI tracking, real-time notifications and analytical dashboard
+    \item Apply advanced architecture, security and development practices (\textbf{SOLID}, Clean Code) in FAPESQ R\&D project
+\end{itemize}
+
+\textbf{Alttab Corp}\textbf{ | Founder and CEO} \hfill Remote | May, 2023 - Present\\
+\textit{Technology and Innovation Company} \hfill Part-time\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Lead technology startup focused on IT consulting, 3D prototyping and digital solutions
+    \item Provide full-stack development and infrastructure consulting for corporate environments
+    \item Develop and execute technological innovation projects with direct impact on business results
+\end{itemize}
+
+\textbf{Life Tecnologia e Consultoria}\textbf{ | User Support Technician} \hfill Cajazeiras-PB | Jan, 2023 - Present\\
+\textit{Allocated at Júlio Bandeira University Hospital (HUJB - Ebserh)} \hfill On-site\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Provide N1/N2 technical support in critical healthcare environment, maintaining high service availability
+    \item Administer institutional systems (\textbf{SEI}, \textbf{AGHU}, \textbf{PACS}) and network infrastructure
+    \item Manage information security and technical documentation in regulated environment
+\end{itemize}
+
+\textbf{LOOP3}\textbf{ | Full-stack Developer} \hfill Itapema-SC | Feb, 2022 - Sep, 2022\\
+\textit{Web and Mobile Development} \hfill Remote\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Developed complete web systems with \textbf{Node.js}, \textbf{Express.js} and \textbf{MongoDB} on the backend
+    \item Created responsive interfaces with \textbf{React} (web) and \textbf{React Native} (mobile), focusing on UX
+    \item Implemented interactive dashboards and robust APIs with focus on performance and scalability
+    \item Integrated \textbf{Asaas} platform via \textbf{Webhooks} for billing and transaction automation
+    \item Used \textbf{Azure DevOps} for CI/CD, versioning and agile project management
+    \item Applied secure development practices and performance optimization across all layers
+\end{itemize}
+
+\textbf{Faculdade Santa Maria}\textbf{ | IT Technician} \hfill Cajazeiras-PB | Sep, 2021 - Feb, 2023\\
+\textit{Development and Support in Educational Technology} \hfill Full-time\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Developed student service system with \textbf{Node.js}, \textbf{TypeScript}, \textbf{Docker}, \textbf{AWS S3}, \textbf{PostgreSQL} and \textbf{React}
+    \item Created analytical reports via \textbf{SQL Server} to support strategic decision-making
+    \item Implemented Individual Work Plan (PIT) platform using \textbf{Node.js}, \textbf{SQLite3}, \textbf{SendGrid} and \textbf{React}
+    \item Maintained network infrastructure and services with high availability for over 500 users
+    \item Provided N1/N2 support for \textbf{TOTVS Educational} system, ensuring operational continuity
+    \item Used \textbf{TypeORM} and \textbf{Knex.js} for ORM, and \textbf{Express.js} for API development
+\end{itemize}
+
+\textbf{Loopis Jr}\textbf{ | HR Director \& Developer} \hfill Cajazeiras-PB | Dec, 2018 - Dec, 2021\\
+\textit{Technology Junior Company - IFPB} \hfill Hybrid\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Developed web/mobile applications with \textbf{Python} (\textbf{Django}), \textbf{Node.js} and \textbf{Ionic}
+    \item Technical leadership and team management of 15+ people in development projects
+    \item Implemented agile methodologies and development best practices
+\end{itemize}
+
+\textbf{Dical Fiat}\textbf{ | Information Technology Technician} \hfill Paraíba | Feb, 2018 - Dec, 2021\\
+\textit{IT Support and Infrastructure} \hfill Part-time · On-site\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item Performed preventive and corrective computer maintenance, maximizing lifespan and stability
+    \item Managed software installation and configuration, ensuring application availability and performance
+    \item Administered network infrastructure, including device configuration and troubleshooting
+    \item Provided N1 and N2 technical support for \textbf{Dealernet} system, maintaining operational continuity
+    \item Ensured efficient and reliable connectivity for the entire team
+    \item Implemented preventive maintenance routines, reducing system downtime
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -111,101 +204,95 @@ Solid interpersonal skills, teamwork, organization and a strong willingness to l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \header{Education}
 \vspace{2mm}
-\textbf{Instituto Federal de Educação, Ciência e Tecnologia da Paraíba}\hfill Cajazeiras-PB, Brasil\\
-High School Diploma with Integrated Technical IT Course \hfill Jan, 2014 - Jan, 2018\\
-{\sl GPA: 75,82}\\
+\textbf{Federal Institute of Education, Science and Technology of Paraíba}\hfill Cajazeiras-PB, Brazil\\
+Technology Degree in Systems Analysis and Development \hfill Jan, 2018 - Mar, 2023\\
+{\sl Thesis: Historical Inventories System with Neo4J }\\
 \vspace{2mm}
-\textbf{Instituto Federal de Educação, Ciência e Tecnologia da Paraba}\hfill Cajazeiras-PB, Brasil,\\
-Bachelor's Degree in Systems Analysis and Development \hfill Jan, 2018 - Mar, 2023\\
-{\sl GPA: 74,43}\\
+\textbf{Federal Institute of Education, Science and Technology of Paraíba}\hfill Cajazeiras-PB, Brazil\\
+Technical Course in IT Integrated with High School \hfill Jan, 2014 - Jan, 2018\\
 \vspace{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Experience
+%     Key Achievements
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Experience}
+\header{Key Achievements}
+\vspace{2mm}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Research \& Development:} FAPESQ R\&D projects focused on public safety innovation
+    \item \textbf{Critical Systems:} Maintenance of healthcare systems with high availability
+    \item \textbf{Social Impact:} Development of solutions benefiting 100+ users in critical sectors
+\end{itemize}
 \vspace{2mm}
 
-\textbf{Faculdade Santa Maria}\textbf{ | Developer} \hfill Cajazeiras-PB, Brasil | Set, 2021 - Fev, 2023\\
-\vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-    \item  Creation of customized reports through SQL queries in  \textbf{SQL Server}, agregando valor ao fornecer dados analíticos e insights valiosos para a tomada de decisões.
-    \item  Development of a student service management system, including file requests to the Registrar's Office. Use of \textbf{Nodejs, Express, Typescript, Docker} for back-end development,
-          \textbf{AWS} for file storage, \textbf{PostgreSQL} for the application database, \textbf{TypeORM} as an ORM for managing the relational database and \textbf{React} for a dynamic and responsive user interface.
-    \item  Development of a system to manage the Individual Work Plan, facilitating the organization and monitoring of teaching activities. Use of \textbf{Node.js, Express.js} for back-end development,
-          \textbf{Knex.js} for interaction with the \textbf{SQLite3} database, as well as integration with the \textbf{SendGrid} for notifications and \textbf{React} on the front-end for a modern, interactive user experience.
-    \item  Management and maintenance of wired and wireless networks, including network cable, ensuring reliable and efficient connectivity.
-    \item  Providing first and second level technical support for the TOTVS Educacional system, resolving problems and maintaining continuous operation.
-\end{itemize}
-\textbf{Loop3}\textbf{ | Full-stack web developer} \hfill Remoto | Feb, 2022 - Sep, 2022\\
-\vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-    \item Creation and maintenance of complete web system functionalities, including interactive dashboards, robust APIs and intuitive mobile applications. Use of  \textbf{Node.js, Express.js} for back-end development and \textbf{MongoDB} as a non-relational database, \textbf{React} for front-end development and \textbf{React Native} for mobile development to ensure an efficient and secure user experience.
-    \item Implementation of integrations with the Collection Management platform, \textbf{Asaas}, using \textbf{Webhooks} for efficient notifications.
-    \item Use of \textbf{Azure DevOps} for project management, CI/CD, optimizing development and deployment processes.
-
-
-\end{itemize}
-\textbf{Dical Fiat}\textbf{ | IT Technician} \hfill Cajazeiras-PB, Brasil | Feb, 2018 - Dec, 2021\\
-\vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-    \item  Responsible for the preventive and corrective maintenance of computers, ensuring their proper functioning and extending their useful life.
-    \item  Installing and configuring a variety of software, ensuring the availability and proper performance of the applications used by the team.
-    \item  Management and maintenance of the network infrastructure, including equipment configuration and troubleshooting, ensuring reliable and efficient connectivity for users.
-    \item  Providing first and second level technical support for the Dealernet system, resolving problems and maintaining continuous operation.
-\end{itemize}
-\textbf{Loopis Jr (Empresa Júnior)}\textbf{ | Consultant and HR} \hfill Cajazeiras-PB, Brasil | Jan, 2019 - Dec, 2021\\
-\vspace{-3mm}
-\begin{itemize} \itemsep -3pt
-    \item  Responsible for the efficient management of the company's human resources, including activities such as recruitment, selection, training and development, aimed at the strategic alignment of employees with organizational objectives.
-
-\end{itemize}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Skills
+%     Featured Projects
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Skills}
-\vspace{2mm}
-\begin{longtable}{p{4cm}p{12cm}}
-    Programming Languages: & JavaScript, Python, GdScript, TypeScript                        \\
-    Libraries/Frameworks:  & React, Django, NestJs, Expressjs, handlebars, React-Native      \\
-    Tools / Platforms:     & Docker, knex, TypeOrm, Godot, Insominia, Azure DevOps, Git, AWS \\
-    Databases:             & MongoDB, Postgresql, Neo4J, Sqlite3, SqlServer                  \\
-\end{longtable}
+\header{Featured Projects}
 \vspace{1mm}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Projects
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Projects / Open-Source}
-\vspace{2mm}
-{\textbf{API-bibliteca-ciec}}\textbf{ | \href{https://github.com/Alttabcorp/API-bibliteca_siec}{Link}}\hfill{\sl nestjs,swagger,docker,typescript}\\
+{\textbf{Historical Inventories System}}\textbf{ | \href{https://repositorio.ifpb.edu.br/handle/177683/2898}{Link}}\hfill{\sl Node.js, TypeScript, Neo4J, React}\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Development of an API for book management, using the latest technologies to ensure performance and efficiency.
-        Implementation of the API documentation using \textbf{Swagger}, providing a user-friendly interface. Using \textbf{Docker} to ensure the application's portability and scalability.
-        The development was done in \textbf{TypeScript}. \textbf{NestJS} was chosen as the backend framework, providing a modular and scalable architecture.
-        This API allows books to be created, updated, deleted and consulted quickly and efficiently, providing a solid foundation for library management systems and online bookstores.
+    \item[] Graduation thesis at IFPB focused on analyzing historical judicial documents (post-mortem inventories) using graph-oriented database for mapping social and patrimonial relationships.
+        \begin{itemize}
+            \item Complex data modeling in Neo4J to represent relationships between people, assets and processes
+            \item React web interface with interactive social graph visualization
+            \item REST API in Node.js/TypeScript with endpoints for data analysis
+            \item Processing of 1000 historical records with social pattern identification
+            \item Reduction in historical and genealogical research time
+            \item Tool used by researchers for regional historiographic studies
+        \end{itemize}
 \end{itemize}
-\vspace*{3mm}
-{\textbf{Cext-final-}}\textbf{ | \href{https://github.com/bodescorp/Cext-final-}{Link}}\hfill{\sl Python/ Django }\\
+\vspace*{2mm}
+
+{\textbf{CIEC Library API}}\textbf{ | \href{https://github.com/Alttabcorp/API-bibliteca_siec}{Link}}\hfill{\sl NestJS, Swagger, Docker, TypeScript}\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Final year project during technical course at the IFPB Cajazeiras campus, a web application using Django that simplifies filling in certificates. This application provides an intuitive and interactive interface, built with \textbf{HTML}, \textbf{CSS} and \textbf{JavaScript} integrated with \textbf{Django}. The solution offers an effective way of automating the process of generating personalized certificates, making it accessible and simplified for various use cases.
+    \item[] RESTful API for complete library collection management, developed with modular architecture and modern practices.
+        \begin{itemize}
+            \item Complete API implementation (CRUD) with NestJS and TypeScript, following REST standards
+            \item Interactive documentation via Swagger UI with documented endpoints
+            \item Containerization with Docker and Docker Compose for development and production environments
+            \item Layered architecture (Repository Pattern) with test coverage
+            \item JWT authentication system and granular permission control
+            \item Integration with external services for catalog import/export
+        \end{itemize}
 \end{itemize}
-\vspace*{3mm}
-{\textbf{Sistema Inventários}}\textbf{ | \href{https://repositorio.ifpb.edu.br/handle/177683/2898}{Link}}\hfill{\sl NodeJs, Typescript, Neo4J, React }\\
+\vspace*{2mm}
+
+{\textbf{Technical Documentation Template}}\textbf{ | Alttab Corp}\hfill{\sl Docker, LaTeX, Markdown, DevContainer}\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -3pt
-    \item[] Final year project for bachelors degree at the IFPB Cajazeiras campus, the project uses a non-relational database to store and manipulate information from post-mortem inventories, judicial historical sources that record a person's assets after their death, as well as the names of people involved in this process. Using a graph-oriented database (NoSQL), due to its ability to return to the user in graphs, facilitating queries and allowing information to be cross-referenced to identify the people mentioned in the inventories.
+    \item[] Enterprise technical documentation framework developed to standardize and accelerate project documentation through reusable templates.
+        \begin{itemize}
+            \item Containerized environment with Docker and DevContainer for consistent development
+            \item Modular templates in LaTeX and Markdown with hierarchical structure
+            \item Versioning system via Git submodules for reuse across projects
+            \item CI/CD pipelines for validation and automatic documentation generation
+            \item Reduction in documentation setup time for new projects
+            \item Adopted as standard across all company projects
+        \end{itemize}
 \end{itemize}
-\vspace*{3mm}
+\vspace*{2mm}
+
+{\textbf{Certificate System}}\textbf{ | \href{https://github.com/bodescorp/Cext-final-}{Link}}\hfill{\sl Python, Django, JavaScript}\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+    \item[] Technical course thesis project developed for IFPB Campus Cajazeiras, focused on automating and simplifying the institutional certificate issuance process.
+        \begin{itemize}
+            \item Responsive interface developed with Django Templates, HTML5, CSS3 and JavaScript
+            \item Dynamic template system with customizable models
+            \item Reduction in issuance time (from hours to minutes)
+            \item Automatic validation with QR Code and anti-fraud system
+            \item Integration with academic system for data import
+            \item Implemented and used by IFPB departments
+        \end{itemize}
+\end{itemize}
+\vspace*{2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -213,42 +300,19 @@ Bachelor's Degree in Systems Analysis and Development \hfill Jan, 2018 - Mar, 20
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \header{Certifications}
-\vspace{2mm}
-• NLW Unite - Fullstack - \textbf{\href{https://app.rocketseat.com.br/certificates/d3577eb6-c50f-42f3-b595-b96297ef0e05}{Rocketseat}}\\
-\begin{itemize}
-    \item [] Development of a front-end application in \textbf{HTML}, \textbf{CSS} and \textbf{JavaScript}, theoretical concepts of the fundamentals of programming, creation of the basic structure with \textbf{HTML}, styling with \textbf{CSS}, application of programming logic with \textbf{JavaScript}, AI to generate the list of participants, \textbf{Day.js} to deal with dates and use of \textbf{GitHub} and GitHub Pages to publish the application.
+\vspace{1mm}
+\begin{itemize}[leftmargin=*] \itemsep -2pt    
+    \item \textbf{Docker} (\href{https://drive.google.com/drive/folders/1YKThgvnT5h1bA_Hb0uDiIf7p8Qiph-NC}{B7Web})
+    - Containerization, orchestration and DevOps practices
+    
+    \item \textbf{Neo4j Fundamentals} (\href{https://graphacademy.neo4j.com/c/9d25b259-5995-4053-8475-7b2bf61f163e/}{Neo4j})
+    - Graph data modeling and analysis
+    
+    \item \textbf{Advanced Git and GitHub} (\href{https://www.udemy.com/certificate/UC-db57cce7-1471-47ff-9828-0e3a4d7da628/}{Udemy})
+    - Advanced version control and collaboration
+    
+    \item \textbf{Project Management} (\href{https://www.linkedin.com/learning/certificates/0fc1a744c87dc72f53e8c694fd58809808a183327167377cb224c1ac43e732b6}{LinkedIn})
+    - Agile methodologies and team leadership
 \end{itemize}
-\vspace*{1mm}
-• NLW Unite - Nodejs - \textbf{\href{https://app.rocketseat.com.br/certificates/a53012ec-27a9-419e-9a8c-86f28508a406}{Rocketseat}}\\
-\begin{itemize}
-    \item [] Development of a back-end application in Node.js, application of \textbf{REST} API concepts, using \textbf{TypeScript}, \textbf{Fastify} as a framework, integration of \textbf{Prisma ORM} + SQLite and \textbf{Zod} for data validation.
-\end{itemize}
-\vspace*{1mm}
-• NLW Unite - Python - \textbf{\href{https://app.rocketseat.com.br/certificates/c5f21b9b-53c5-4ed7-bc45-430d87cccf77}{Rocketseat}}\\
-\begin{itemize}
-    \item [] Development of an event registration and management application. Using \textbf{Python} as the programming language, \textbf{Flask} as the web framework, preparing the environment with \textbf{Virtualenv} and good \textbf{Pylint} design practices. Separation of responsibilities using entities, services and repositories. Automated testing with \textbf{Pytest}.
-\end{itemize}
-\vspace*{6mm}
-• Git e GitHub do básico ao avançado (c/ gist e GitHub Pages) \textbf{\href{https://www.udemy.com/certificate/UC-db57cce7-1471-47ff-9828-0e3a4d7da628/}{Udemy}}\\
-\begin{itemize}
-    \item []  Fundamental and advanced skills in version control and collaboration in software projects. The course covered \textbf{Git} fundamentals, including repository initialization, commits, branches, merges and conflict resolution, as well as using \textbf{GitHub} to create and manage repositories, pull requests and collaborations.
-\end{itemize}
-\vspace*{1mm}
-• Docker - \textbf{\href{https://drive.google.com/drive/folders/1YKThgvnT5h1bA_Hb0uDiIf7p8Qiph-NC}{B7Web}}\\
-\begin{itemize}
-    \item [] Fundamental and advanced skills in containerization and container management. The course covered \textbf{Docker} fundamentals, including installation, image creation, container management, networks and volumes, as well as the use of \textbf{Docker Compose} to orchestrate multiple containers.
-\end{itemize}
-\vspace*{1mm}
-• Fundamentos de Gestão de Projetos \textbf{\href{https://www.linkedin.com/learning/certificates/0fc1a744c87dc72f53e8c694fd58809808a183327167377cb224c1ac43e732b6}{linkedin}}\\
-\begin{itemize}
-    \item [] Fundamental skills in project planning, execution and monitoring. The course covered project management fundamentals, including defining objectives, scope, schedule, budget and quality, communication techniques, risk management and team leadership, as well as advanced practices for optimizing resources, controlling progress and delivering successful projects.
-\end{itemize}
-\vspace*{1mm}
-• Neo4j Fundamentals - \textbf{\href{https://graphacademy.neo4j.com/c/9d25b359-5995-4053-8475-7b2bf61f163e/}{Neo4j}}\\
-\begin{itemize} \itemsep -3pt
-    \item[] Fundamental skills in graph-oriented databases and complex data management.The course covered \textbf{Neo4j} fundamentals, including installation, graph data modeling, queries using the \textbf{Cypher} language, and node and relationship manipulation. In addition, I learned how to integrate \textbf{Neo4j} with other technologies, optimize queries for performance and apply advanced graph analysis techniques to solve complex problems.
-\end{itemize}
-\vspace{2mm}
 
-\
 \end{document}
