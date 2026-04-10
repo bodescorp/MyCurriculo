@@ -1,9 +1,9 @@
-Curriculo.aux
-Curriculo.fdb_latexmk
-Curriculo.fls
-Curriculo.log
-Curriculo.out
-Curriculo.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
 /.devcontainer
 /DockerFile
 Dockerfile
